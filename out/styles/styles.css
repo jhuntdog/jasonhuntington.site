@@ -1,0 +1,416 @@
+// Main Styles
+// --------------------------------------------------
+// --------------------------------------------------
+
+
+// Variables
+// --------------------------------------------------
+
+// Grays
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+
+// Brand colors
+@brand-primary:         #428bca;
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+
+// Colors
+@colorAccent:     #FF8A3B;
+@colorLink:       #33b5e5;
+@colorLinkHover:  darken(@colorLink, 15%);
+@colorHeader:     #445566;
+@colorSubHeader:  #9D9FA5;
+@colorContent:    #797F84;
+@colorActive:     @colorAccent;
+@colorInActive:   #CCCCCC;
+@colorQuote:      @colorSubHeader;
+
+@colorBlue:         #33b5e5;
+@colorBlueDark:     #0099cc;
+@colorGreen:        #99cc00;
+@colorGreenDark:    #669900;
+@colorRed:          #ff4444;
+@colorRedDark:      #cc0000;
+@colorOrange:       #ffbb33;
+@colorOrangeDark:   #ff8800;
+@colorPurple:       #aa66cc;
+@colorPurpleDark:   #9933cc;
+
+
+
+
+// BASE STYLES - OPINIONATED DEFAULTS FROM H5BP.COM
+// --------------------------------------------------
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1.4em;
+    line-height: 1.4;
+}
+
+
+ // Remove text-shadow in selection highlight: h5bp.com/i
+ // These selection rule sets have to be separate.
+ // Customize the background color to match your design.
+::-moz-selection {
+    background: @colorBlue;
+    text-shadow: none;
+}
+::selection {
+    background: @colorBlue;
+    text-shadow: none;
+}
+
+// A better looking default horizontal rule
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+img {
+    vertical-align: middle;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+    resize: vertical;
+}
+
+
+// --------------------------------------------------
+// CUSTOM STYLES
+// --------------------------------------------------
+
+// utilities
+.spacer {
+  height: 1em;
+}
+
+// sections
+// --------------------------------------------------
+
+// Padding for in-page bookmarks
+section {
+  padding-top: 10px;
+}
+
+// Few stylistic typography tweaks
+section > .page-header,
+section > .lead {
+  color: #5a5a5a;
+}
+section > ul li {
+  margin-bottom: 5px;
+}
+
+// header
+// ---------------------------
+
+.jh-heading {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 2em;
+  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.2);
+}
+
+header.jh-heading h1 {
+  color: @grayDarker;
+}
+
+.jh-heading h2 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+.jh-heading .heading-avatar {
+  display: block;
+  position: absolute;
+  top: 2.8em;
+  left: 27em;
+  background: url("/img/jason-small.jpg");
+  width: 25px;
+  height: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+.jh-heading .heading-avatar:hover {
+  transform: rotate(720deg);
+  background: url("/img/jason-large.jpg");
+  width: 150px;
+  height: 150px;
+}
+
+// nav
+// --------------------------------
+nav.mainnav {
+  font-size: 36px;
+}
+
+nav.mainnav > ul {
+  padding: 0.4em 0;
+}
+
+nav.mainnav .nav > li {
+  display: inline;
+  margin-right: 0.75em;
+}
+
+nav.mainnav .nav > li > a {
+  display: inline;
+}
+
+
+// footer
+// ---------------------------
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body > .container,
+.footer .container {
+  padding-left:  15px;
+  padding-right: 15px;
+}
+
+.colophon {
+  padding: 30px 0;
+  margin-top: 100px;
+  border-top: 1px solid #e5e5e5;
+}
+.colophon p {
+  margin-bottom: 4px;
+  color: #777;
+}
+
+
+// --------------------------------------------------
+// Helper classes
+// --------------------------------------------------
+
+// image replacement
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+// Extends the .visuallyhidden class to allow the element to be focusable
+// when navigated to via the keyboard: h5bp.com/p
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+// Hide visually and from screenreaders, but maintain layout
+
+.invisible {
+    visibility: hidden;
+}
+
+// Clearfix: contain floats
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+// For IE 6/7 only - Include this rule to trigger hasLayout and contain floats.
+.clearfix {
+    *zoom: 1;
+}
+
+// Responsive variations
+// --------------------------------------------------
+
+// Tablets and up
+@media screen and (min-width: 768px) {
+
+  /* Account for fixed navbar (which is static to start) */
+  body {
+    padding-top: 10px; /* Default height of navbar */
+  }
+
+  .jh-heading h1 {
+    font-size: 2.8em;
+  }
+
+  .jh-heading .heading-avatar {
+    top: 2.9em;
+    left: 29em;
+  }
+
+
+  .jh-heading h2 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+
+  // Tweak display of docs jumbotrons
+  .masthead {
+
+  }
+  .masthead h1 {
+    font-size: 60px;
+  }
+  .masthead p {
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .subhead {
+    padding-top:    20px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+
+}
+
+// Tablets/desktops and up
+@media screen and (min-width: 992px) {
+
+}
+
+// Large desktops and up
+@media screen and (min-width: 1200px) {
+
+}
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,15 @@
+---
+layout: 'default'
+title: 'Home'
+tags: ['page']
+scripts: []
+navlinktitle: 'Home'
+navicon: 'icon-home'
+isPage: true
+pageOrder: 1
+navOrder: 1
+---
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, aut accusantium praesentium consectetur numquam nulla itaque sit! Deleniti, velit, laboriosam, maxime, aliquam commodi distinctio repellendus pariatur facilis maiores tempore provident?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, voluptate, iure, ea, consectetur delectus libero maiores quod rem ullam praesentium placeat qui necessitatibus corrupti obcaecati quae dolorem in incidunt numquam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, tempore ipsam error libero deleniti repellat voluptate inventore unde explicabo sunt assumenda quisquam suscipit tenetur recusandae debitis vel molestias cumque blanditiis.</p>
