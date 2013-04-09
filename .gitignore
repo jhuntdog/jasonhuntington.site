@@ -1,3 +1,6 @@
+# project files
+out/
+
 lib-cov
 *.seed
 *.log
