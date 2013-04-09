@@ -73,6 +73,19 @@ docpadConfig = {
       else
         @site.subtitle
 
+  # =================================
+  # Collections
+
+  collections:
+    pages: (database) ->
+      database.findAllLive({pageOrder: $exists: true}, [pageOrder:1,title:1])
+
+    navpages: (database) ->
+      database.findAllLive({navOrder: $exists: true}, [pageOrder:1,title:1])
+
+    posts: (database) ->
+      database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
+
 
   # =================================
   # DocPad Events
