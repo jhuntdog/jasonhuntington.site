@@ -1,5 +1,5 @@
 # project files
-out/
+# out/
 
 lib-cov
 *.seed
@@ -15,3 +15,7 @@ logs
 results
 
 npm-debug.log
+
+# os files
+*.sublime-project
+*.sublime-workspace
