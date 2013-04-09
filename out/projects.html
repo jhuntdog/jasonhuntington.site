@@ -46,22 +46,25 @@
     ================================================== -->
     <header class="jh-heading" id="overview">
       <div class="container">
-          <div class="row">
-                    <div class="heading-content">
-              <a href="/" title="Return home">
+                <div class="heading-content">
+
+                    <div class="title">
+                        <a href="/" title="Return home">
                 <h1>
                   Jason Huntington
                 </h1>
-                <span class="heading-avatar pull-right"></span>
+                <span class="heading-avatar"></span>
               </a>
+                    </div>
 
-              <h2>
-                Just an average guy experimenting with web development.<br>
-                Aficionado of javascript, nodejs, html5, android, java.<br>
-                Available for consulting. <a href="mailto:jason@jasonhuntington.com" title="Contact Me" class="contact-button">Contact</a>
-              </h2>
-            </div>
-          </div>
+
+
+          <h2>
+            Just an average guy experimenting with web development.<br>
+            Aficionado of javascript, nodejs, html5, android, java.<br>
+            Available for consulting. <a href="mailto:jason@jasonhuntington.com" title="Contact Me" class="contact-button">Contact</a>
+          </h2>
+        </div>
 
 
         <nav class="mainnav">
@@ -136,10 +139,78 @@
   <script src="/components/jhtwbs/docs/assets/js/bootstrap.js"></script>
 
     <!-- DocPad Scripts + Our Own -->
-    <script defer="defer"  src="/scripts/plugins.js"></script>
+    <script >(function(){
+	// Did we just livereload?
+var log = true && localStorage && console && console.log && true;
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReloaded at', new Date())
+}
+
+// Listen for the regenerated event
+// and perform a reload of the page when the event occurs
+var listen = function(){
+	var socket = io.connect('/docpad-livereload');
+	socket.on('regenerated',function(){
+		if ( log ) {
+	localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+}
+document.location.reload();
+	});
+};
+	if ( typeof io !== 'undefined' ) {
+		listen();
+	} else {
+		// Inject socket.io into our page then listen once loaded
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = true;
+	t.src = '/socket.io/socket.io.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t,s);
+};
+		inject();
+	}
+})();</script><script defer="defer"  src="/scripts/plugins.js"></script>
 
   <!-- DocPad Scripts + Our Own -->
-  <script defer="defer"  src="/scripts/plugins.js"></script><script defer="defer"  src="/scripts/scripts.js"></script>
+  <script >(function(){
+	// Did we just livereload?
+var log = true && localStorage && console && console.log && true;
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReloaded at', new Date())
+}
+
+// Listen for the regenerated event
+// and perform a reload of the page when the event occurs
+var listen = function(){
+	var socket = io.connect('/docpad-livereload');
+	socket.on('regenerated',function(){
+		if ( log ) {
+	localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+}
+document.location.reload();
+	});
+};
+	if ( typeof io !== 'undefined' ) {
+		listen();
+	} else {
+		// Inject socket.io into our page then listen once loaded
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = true;
+	t.src = '/socket.io/socket.io.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t,s);
+};
+		inject();
+	}
+})();</script><script defer="defer"  src="/scripts/plugins.js"></script><script defer="defer"  src="/scripts/scripts.js"></script>
 
 
 </body>
