@@ -126,8 +126,39 @@ section > ul li {
 .jh-heading {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 2em;
+  margin-right: 10%;
+  margin-left: 10%;
   background-color: #eeeeee;
   background-color: rgba(238, 238, 238, 0.2);
+}
+
+.jh-heading .jh-brand {
+  font-family: inherit;
+  color: @grayDarker;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.jh-heading {
+  margin-top: 10px;
+}
+
+.jh-heading .jh-brand {
+  font-size: 2.8em;
+  line-height: 2em;
+}
+
+.jh-heading .heading-avatar {
+
+}
+
+.jh-heading p {
+  font-size: 1.4em;
+  line-height: 1.4em;
 }
 
 header.jh-heading h1 {
@@ -284,16 +315,50 @@ body > .container,
     padding-top: 10px; /* Default height of navbar */
   }
 
-  .jh-heading h1 {
+  .jh-heading {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .jh-heading .jh-brand {
     font-size: 2.8em;
+    line-height: 2em;
   }
 
-  .jh-heading .heading-avatar {
-
+  .logo {
+    position: relative;
+    z-index: 1;
   }
 
+  .heading-avatar {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+  }
 
-  .jh-heading h2 {
+  .heading-avatar:hover {
+    //position: absolute;
+    top: 20px;
+    left: 10px;
+    transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    width: 150px;
+    height: 150px;
+    z-index: 9999;
+  }
+
+  .jh-heading p {
     font-size: 1.4em;
     line-height: 1.4em;
   }
