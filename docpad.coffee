@@ -33,6 +33,26 @@ docpadConfig = {
       text:
         heading: "Jason Huntington"
 
+      services:
+        facebookLikeButton:
+          applicationId: ''
+        facebookFollowButton:
+          applicationId: ''
+          username: 'jasonmhuntington'
+        twitterTweetButton: "jasonhuntington"
+        twitterFollowButton: "jasonhuntington"
+        githubFollowButton: "jhuntdog"
+        linkedinButton: "jasonhuntington"
+        googleAnalytics: 'UA-40082218-1'
+
+      social:
+        """
+        googleplus
+        linkedin
+        twitter
+        facebook
+        github
+        """.trim().split('\n')
 
       # The website's styles
       styles: [

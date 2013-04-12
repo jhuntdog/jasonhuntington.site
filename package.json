@@ -19,7 +19,8 @@
     "docpad-plugin-related": "~2.0.5",
     "moment": "~2.0.0",
     "docpad-plugin-less": "~2.1.3",
-    "docpad": "~6.30.3"
+    "docpad": "~6.30.3",
+    "docpad-plugin-coffeekup": "~2.1.5"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"

@@ -108,12 +108,34 @@ body > .container,
 }
 .colophon {
   padding: 30px 0;
-  margin-top: 100px;
+  margin-top: 10px;
   border-top: 1px solid #e5e5e5;
 }
 .colophon p {
   margin-bottom: 4px;
   color: #777;
+}
+.social-connections {
+  margin-top: 20px;
+}
+.social-connections .links {
+  float: left;
+  margin-right: 14px;
+}
+aside.social-connections section.googleplus h1 {
+  color: #F90101;
+}
+aside.social-connections section.facebook h1 {
+  color: #4966a1;
+}
+aside.social-connections section.linkedin h1 {
+  color: #0083b3;
+}
+aside.social-connections section.github h1 {
+  color: #000;
+}
+aside.social-connections section.twitter h1 {
+  color: #248dcd;
 }
 .ir {
   background-color: transparent;
@@ -256,6 +278,13 @@ body > .container,
     font-weight: 300;
     line-height: 1.25;
     color: #999;
+  }
+  aside.social-connections section h1 {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
   }
 }
 @media screen and (min-width: 992px) {

@@ -1,0 +1,14 @@
+---
+cacheable: true
+---
+
+<!-- linkedin -->
+
+<section class="linkedin links">
+  <a href="http://www.linkedin.com/in/jasonhuntington" title="my LinkedIn">
+    <h1>
+      <i class="icon-linkedin"></i>
+      LinkedIn
+    </h1>
+  </a>
+</section>

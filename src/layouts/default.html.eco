@@ -88,6 +88,20 @@
 
   </div> <!-- /main -->
 
+
+  <aside class="social-connections">
+    <div class="container">
+      <h1>Connections</h1>
+      <% for social in @site.social: %>
+
+        <%- @partial("social/#{social}.html") %>
+
+      <% end %>
+
+    </div>
+
+  </aside>
+
   <!-- colophon - main page footer (social buttons, copyright, etc) -->
   <footer class="footer colophon">
     <div class="container">
