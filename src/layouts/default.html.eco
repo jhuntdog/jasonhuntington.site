@@ -92,11 +92,10 @@
   <aside class="social-connections">
     <div class="container">
       <h1>Connections</h1>
-      <% for social in @site.social: %>
 
-        <%- @partial("social/#{social}.html") %>
+      <%- @partial('social.html') %>
 
-      <% end %>
+
 
     </div>
 

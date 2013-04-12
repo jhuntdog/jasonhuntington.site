@@ -1,3 +1,53 @@
 
 
+    <!-- google plus -->
+    <section class="googleplus links">
+      <a href="https://profiles.google.com/jasonmhuntington" title="my google plus">
+        <h1>
+          <i class="icon-google-plus"></i>
+          Google+
+        </h1>
+      </a>
+    </section>
+
+    <!-- linkedin -->
+    <section class="linkedin links">
+      <a href="http://www.linkedin.com/in/jasonhuntington" title="my LinkedIn">
+        <h1>
+          <i class="icon-linkedin"></i>
+          LinkedIn
+        </h1>
+      </a>
+    </section>
+
+    <!-- twitter -->
+    <section class="twitter links">
+      <a href="https://twitter.com/jasonhuntington" title="my twitter">
+        <h1>
+          <i class="icon-twitter"></i>
+          Twitter
+        </h1>
+      </a>
+    </section>
+
+    <!-- facebook -->
+    <section class="facebook links">
+      <a href="https://www.facebook.com/jasonmhuntington" title="my facebook">
+        <h1>
+          <i class="icon-facebook"></i>
+          Facebook
+        </h1>
+      </a>
+    </section>
+
+    <!-- github -->
+    <section class="github links">
+      <a href="https://github.com/jhuntdog" title="my github">
+        <h1>
+          <i class="icon-github"></i>
+          Github
+        </h1>
+      </a>
+    </section>
+
 
