@@ -1,5 +1,6 @@
 # project files
-# out/
+node_modules
+out
 settings.js
 
 lib-cov
