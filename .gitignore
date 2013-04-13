@@ -1,7 +1,13 @@
 # project files
-node_modules
 out
 settings.js
+
+# node_modules hack for azure #
+# ---------------------- #
+!node_modules/
+
+node_modules/*
+!node_modules/docpad
 
 lib-cov
 *.seed
