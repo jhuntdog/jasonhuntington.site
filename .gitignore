@@ -1,7 +1,15 @@
 # project files
-node_modules
 # out/
 settings.js
+
+# node_modules for azure #
+# ---------------------- #
+!node_modules/
+
+node_modules/*
+!node_modules/.bin
+!node_modules/docpad
+!node_modules/coffee-script
 
 lib-cov
 *.seed
