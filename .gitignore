@@ -7,6 +7,7 @@ settings.js
 !node_modules/
 
 node_modules/*
+!node_moduels/.bin
 !node_modules/docpad
 
 lib-cov
