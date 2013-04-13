@@ -103,6 +103,20 @@ textarea {
   height: 1em;
 }
 
+
+// base
+.jh-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.jh-container {
+
+}
+.jh-container .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 // sections
 // --------------------------------------------------
 
@@ -131,8 +145,8 @@ section > ul li {
 .jh-heading {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 2em;
-  margin-right: 10%;
-  margin-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   background-color: #eeeeee;
   background-color: rgba(238, 238, 238, 0.2);
 }
@@ -174,7 +188,7 @@ header.jh-heading h1 {
 }
 
 .heading-avatar {
-  float: right;
+
 }
 
 .heading-avatar {
@@ -204,27 +218,10 @@ header.jh-heading h1 {
   z-index: 9999;
 }
 
-
-
-// .jh-heading .heading-avatar {
-//   display: block;
-//   background: url("/img/jason-small.jpg");
-//   width: 25px;
-//   height: 25px;
-//   transition: all 0.5s ease-in-out;
-// }
-
-// .jh-heading .heading-avatar:hover {
-//   transform: rotate(720deg);
-//   background: url("/img/jason-large.jpg");
-//   width: 150px;
-//   height: 150px;
-// }
-
 // nav
 // --------------------------------
 nav.mainnav {
-  font-size: 36px;
+  font-size: 26px;
 }
 
 nav.mainnav > ul {
@@ -240,6 +237,14 @@ nav.mainnav .nav > li > a {
   display: inline;
 }
 
+
+aside.social-connections section h1 {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+  }
 
 // footer
 // ---------------------------
@@ -365,6 +370,8 @@ aside.social-connections section.twitter h1 {
 
 // Responsive variations
 // --------------------------------------------------
+// --------------------------------------------------
+
 
 // Tablets and up
 @media screen and (min-width: 768px) {
@@ -372,6 +379,11 @@ aside.social-connections section.twitter h1 {
   /* Account for fixed navbar (which is static to start) */
   body {
     padding-top: 4px; /* Default height of navbar */
+  }
+
+  .jh-container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .jh-heading {
@@ -465,6 +477,10 @@ aside.social-connections section.twitter h1 {
     font-weight: 300;
     line-height: 1.25;
     color: #999;
+  }
+
+  nav.mainnav {
+    font-size: 36px;
   }
 
   aside.social-connections section h1 {

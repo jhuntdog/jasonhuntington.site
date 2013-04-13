@@ -81,7 +81,7 @@
       </div>
     </header>
 
-    <div class="container">
+    <div class="jh-container container">
       <section id="content" class="content">
         <%- @content %>
       </section>
@@ -91,7 +91,7 @@
 
 
   <aside class="social-connections">
-    <div class="container">
+    <div class="jh-container container">
       <h1>Connections</h1>
 
       <%- @partial('social.html') %>
@@ -104,7 +104,7 @@
 
   <!-- colophon - main page footer (social buttons, copyright, etc) -->
   <footer class="footer colophon">
-    <div class="container">
+    <div class="jh-container container">
       <div class="about">
         <p>
           This website was created with <a href="http://docpad.org" title="Visit Website">Docpad</a> and is <a href="http://github.com/jhuntdog/jasonhuntington.site" title="Github Source">Open Source</a>.
