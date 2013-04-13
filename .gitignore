@@ -1,6 +1,9 @@
 # project files
 out
+env.coffee
+.env
 settings.js
+
 
 # node_modules hack for azure #
 # ---------------------- #
