@@ -1,5 +1,7 @@
 # project files
-out/
+out
+env.coffee
+.env
 settings.js
 
 # node_modules for azure #
