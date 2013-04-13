@@ -63,8 +63,11 @@
           </p>
 
         </div> <!-- /heading-content -->
+      </div>
+    </header>
 
-
+    <div class="jh-navbar">
+      <div class="container">
         <nav class="mainnav">
           <ul class="nav">
             <% for document in @getCollection('navpages').toJSON(): %>
@@ -77,9 +80,9 @@
             <% end %>
           </ul>
         </nav>
-
       </div>
-    </header>
+    </div> <!-- /jh-navbar -->
+
 
     <div class="jh-container container">
       <section id="content" class="content">

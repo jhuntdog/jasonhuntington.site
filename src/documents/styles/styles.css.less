@@ -42,8 +42,19 @@
 @colorPurple:       #aa66cc;
 @colorPurpleDark:   #9933cc;
 
+// Accents and Color Scheme
+// based off @colorBlue #33b5e5 RGB 51,181,229 HSV 196,78,90 CMYK 78,21,0,10
+@colorBlueMonoGrayer: #355865;
+@colorBlueMonoLighter: #7ACBE9;
+@colorBlueTriadRed: #E94B6E;
+@colorBlueTriadDarker: #137498;
 
+//shades
 
+@colorBlueShadeDarker:  #175065;
+@colorBlueShadeDark:    #2583A5;
+@colorBlueShadeLight:   #36C0F2;
+@colorBlueShadeBright:  #2DA1CB;
 
 // BASE STYLES - OPINIONATED DEFAULTS FROM H5BP.COM
 // --------------------------------------------------
@@ -103,6 +114,8 @@ textarea {
   height: 1em;
 }
 
+// typography
+h2 { color: @colorOrange;}
 
 // base
 .jh-container {
@@ -234,7 +247,28 @@ nav.mainnav .nav > li {
 }
 
 nav.mainnav .nav > li > a {
+  color: @colorBlue;
   display: inline;
+  line-height: 14px;
+  padding: 10px 14px 0;
+  border-radius: 0;
+}
+
+nav.mainnav .nav > li > a:hover,
+nav.mainnav .nav > li > a:focus {
+  color: @colorBlueShadeBright;
+  text-decoration: none;
+  border-bottom: solid 3px @colorBlueShadeBright;
+  background-color: lighten(@colorBlue, 80%);
+}
+
+nav.mainnav .nav > .active > a,
+nav.mainnav .nav > .active > a:hover,
+nav.mainnav .nav > .active > a:focus {
+  color: darken(@colorBlue, 15%);
+  border-radius: 0;
+  border-bottom: solid 3px darken(@colorBlue, 15%);
+  background-color: lighten(@colorBlue, 50%);
 }
 
 
