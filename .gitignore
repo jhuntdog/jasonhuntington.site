@@ -9,6 +9,7 @@ settings.js
 node_modules/*
 !node_modules/.bin
 !node_modules/docpad
+!node_moduels/coffee-script
 
 lib-cov
 *.seed
