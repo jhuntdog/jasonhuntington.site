@@ -132,12 +132,12 @@
 @dropdown-divider-top:           #e5e5e5;
 @dropdown-divider-bottom:        #fff;
 
+@dropdown-link-active-color:     #fff;
+@dropdown-link-active-bg:        @component-active-bg;
+
 @dropdown-link-color:            @grayDark;
 @dropdown-link-hover-color:      #fff;
 @dropdown-link-hover-bg:         @dropdown-link-active-bg;
-
-@dropdown-link-active-color:     #fff;
-@dropdown-link-active-bg:        @component-active-bg;
 
 
 // COMPONENT VARIABLES
@@ -170,11 +170,6 @@
 @navbar-text:                      #777;
 @navbar-bg:                        #eee;
 
-// Navbar brand label
-@navbar-brand-color:               @navbar-link-color;
-@navbar-brand-hover-color:         darken(@navbar-link-color, 10%);
-@navbar-brand-hover-bg:            transparent;
-
 // Navbar links
 @navbar-link-color:                #777;
 @navbar-link-hover-color:          #333;
@@ -183,6 +178,11 @@
 @navbar-link-active-bg:            darken(@navbar-bg, 10%);
 @navbar-link-disabled-color:       #ccc;
 @navbar-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-brand-color:               @navbar-link-color;
+@navbar-brand-hover-color:         darken(@navbar-link-color, 10%);
+@navbar-brand-hover-bg:            transparent;
 
 // Inverted navbar
 @navbar-inverse-text:                       @grayLight;
