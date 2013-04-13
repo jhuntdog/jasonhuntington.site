@@ -12,12 +12,16 @@ navOrder: 1
 
 <div class="marketing">
   <p class="lead">
-    I launched this website to learn about web development and web programming technologies, including HTML5, nodejs, javascript, and Azure.
+    I launched this website to learn about web development and web programming technologies, including HTML5, nodejs, javascript, and Windows Azure.
   </p>
+
   <p>
-    The site is powered by Bevry's excellent <a href="http://docpad.org">Docpad</a> engine.
+    The site is powered by Bevry's excellent <a href="http://docpad.org">Docpad</a> engine and code design heavily inspired by Docpad's creator <a href="http://balupton.com/">Ben Lupton</a>
   </p>
 </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, voluptate, iure, ea, consectetur delectus libero maiores quod rem ullam praesentium placeat qui necessitatibus corrupti obcaecati quae dolorem in incidunt numquam.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, tempore ipsam error libero deleniti repellat voluptate inventore unde explicabo sunt assumenda quisquam suscipit tenetur recusandae debitis vel molestias cumque blanditiis.</p>
+<article class="pitch">
+  <h2>Pitch</h2>
+  <p>I am smart and motivated to improve myself and community. My education and experience working on the forefront of medical and pharmaceutical innovation have inevitably lead me to information technology, data management, and programming. Web programming is a hobby that has yielded incredible dividends in business application.</p>
+</article>
+

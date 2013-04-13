@@ -42,8 +42,19 @@
 @colorPurple:       #aa66cc;
 @colorPurpleDark:   #9933cc;
 
+// Accents and Color Scheme
+// based off @colorBlue #33b5e5 RGB 51,181,229 HSV 196,78,90 CMYK 78,21,0,10
+@colorBlueMonoGrayer: #355865;
+@colorBlueMonoLighter: #7ACBE9;
+@colorBlueTriadRed: #E94B6E;
+@colorBlueTriadDarker: #137498;
 
+//shades
 
+@colorBlueShadeDarker:  #175065;
+@colorBlueShadeDark:    #2583A5;
+@colorBlueShadeLight:   #36C0F2;
+@colorBlueShadeBright:  #2DA1CB;
 
 // BASE STYLES - OPINIONATED DEFAULTS FROM H5BP.COM
 // --------------------------------------------------
@@ -103,6 +114,22 @@ textarea {
   height: 1em;
 }
 
+// typography
+h2 { color: @colorOrange;}
+
+// base
+.jh-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.jh-container {
+
+}
+.jh-container .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 // sections
 // --------------------------------------------------
 
@@ -131,8 +158,8 @@ section > ul li {
 .jh-heading {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 2em;
-  margin-right: 10%;
-  margin-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   background-color: #eeeeee;
   background-color: rgba(238, 238, 238, 0.2);
 }
@@ -154,12 +181,10 @@ section > ul li {
 
 .jh-heading .jh-brand {
   font-size: 2.8em;
-  line-height: 2em;
+  line-height: 1em;
 }
 
-.jh-heading .heading-avatar {
 
-}
 
 .jh-heading p {
   font-size: 1.4em;
@@ -175,27 +200,41 @@ header.jh-heading h1 {
   line-height: 1.2em;
 }
 
+.heading-avatar {
 
+}
 
-// .jh-heading .heading-avatar {
-//   display: block;
-//   background: url("/img/jason-small.jpg");
-//   width: 25px;
-//   height: 25px;
-//   transition: all 0.5s ease-in-out;
-// }
+.heading-avatar {
+  position: relative;
+  top: -10px;
+  left: 10px;
+  width: 36px;
+  height: 36px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+}
 
-// .jh-heading .heading-avatar:hover {
-//   transform: rotate(720deg);
-//   background: url("/img/jason-large.jpg");
-//   width: 150px;
-//   height: 150px;
-// }
+.heading-avatar:hover {
+  //position: absolute;
+  top: 20px;
+  left: 10px;
+  transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  -o-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+  width: 150px;
+  height: 150px;
+  z-index: 9999;
+}
 
 // nav
 // --------------------------------
 nav.mainnav {
-  font-size: 36px;
+  font-size: 26px;
 }
 
 nav.mainnav > ul {
@@ -208,9 +247,38 @@ nav.mainnav .nav > li {
 }
 
 nav.mainnav .nav > li > a {
+  color: @colorBlue;
   display: inline;
+  line-height: 14px;
+  padding: 10px 14px 0;
+  border-radius: 0;
 }
 
+nav.mainnav .nav > li > a:hover,
+nav.mainnav .nav > li > a:focus {
+  color: @colorBlueShadeBright;
+  text-decoration: none;
+  border-bottom: solid 3px @colorBlueShadeBright;
+  background-color: lighten(@colorBlue, 80%);
+}
+
+nav.mainnav .nav > .active > a,
+nav.mainnav .nav > .active > a:hover,
+nav.mainnav .nav > .active > a:focus {
+  color: darken(@colorBlue, 15%);
+  border-radius: 0;
+  border-bottom: solid 3px darken(@colorBlue, 15%);
+  background-color: lighten(@colorBlue, 50%);
+}
+
+
+aside.social-connections section h1 {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+  }
 
 // footer
 // ---------------------------
@@ -336,6 +404,8 @@ aside.social-connections section.twitter h1 {
 
 // Responsive variations
 // --------------------------------------------------
+// --------------------------------------------------
+
 
 // Tablets and up
 @media screen and (min-width: 768px) {
@@ -343,6 +413,11 @@ aside.social-connections section.twitter h1 {
   /* Account for fixed navbar (which is static to start) */
   body {
     padding-top: 4px; /* Default height of navbar */
+  }
+
+  .jh-container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .jh-heading {
@@ -436,6 +511,10 @@ aside.social-connections section.twitter h1 {
     font-weight: 300;
     line-height: 1.25;
     color: #999;
+  }
+
+  nav.mainnav {
+    font-size: 36px;
   }
 
   aside.social-connections section h1 {
