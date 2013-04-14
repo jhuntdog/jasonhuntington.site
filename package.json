@@ -20,7 +20,8 @@
     "docpad": "~6.30.3",
     "docpad-plugin-coffeekup": "~2.1.5",
     "docpad-plugin-cleanurls": "~2.4.3",
-    "docpad-plugin-coffeescript": "~2.2.1"
+    "docpad-plugin-coffeescript": "~2.2.1",
+    "coffee-script": "~1.6.2"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
