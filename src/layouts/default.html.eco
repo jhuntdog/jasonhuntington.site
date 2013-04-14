@@ -110,12 +110,14 @@
     <div class="jh-container container">
       <div class="about">
         <p>
-          This website was created with <a href="http://docpad.org" title="Visit Website">Docpad</a> and is <a href="http://github.com/jhuntdog/jasonhuntington.site" title="Github Source">Open Source</a>.
+          This website was created with <a href="http://bevry.me" target="_blank" title="Visit Website">Bevry's</a> <a href="http://docpad.org" target="_blank" title="Visit on GitHub">DocPad</a> Powered by <a href="http://nodejs.org/" target="_blank" title="Node.js">Node.js</a> and is <a href="http://github.com/jhuntdog/jasonhuntington.site" title="Github Source">Open Source</a>.
         </p>
       </div>
       <div class="copyright">
         <p>
-          Unless stated otherwise, Copyright © 2013+ <a href="http://jasonhuntington.com">Jason Huntington</a>. <br>
+          Unless stated otherwise, Copyright © 2013+ <a href="http://jasonhuntington.com">Jason Huntington</a>.
+        </p>
+        <p>
           Code licensed <a href="http://en.wikipedia.org/wiki/Permissive_free_software_licence">permissively</a> under the <a href="http://creativecommons.org/licenses/MIT/">MIT License</a> and <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> for everything else (including content, media, design). Enjoy!
         </p>
       </div>
