@@ -16,12 +16,19 @@ navOrder: 1
   </p>
 
   <p>
-    The site is powered by Bevry's excellent <a href="http://docpad.org">Docpad</a> engine and code design heavily inspired by Docpad's creator <a href="http://balupton.com/">Ben Lupton</a>
+    The site is powered by Bevry's excellent <a href="http://docpad.org">Docpad</a> engine and code design heavily inspired by Docpad's creator <a href="https://github.com/balupton/">Ben Lupton</a>
   </p>
 </div>
 
 <article class="pitch">
   <h2>Pitch</h2>
   <p>I am smart and motivated to improve myself and community. My education and experience working on the forefront of medical and pharmaceutical innovation have inevitably lead me to information technology, data management, and programming. Web programming is a hobby that has yielded incredible dividends in business application.</p>
+  <a href="#" class="read-more js">more...</a>
+  <div class="more-to-read">
+    <p>I am fluent in medical terminology, pharmaceutical development, and health data sciences.</p>
+    <p>Even with all the experiences I've had in my life, the sour and the sweet - I'm blessed to have been part of every single one, for they have been the pieces that have built the me of today. The sour will continue to make myself stronger and build that thirst for success and improvement, while the sweet will serve as that warm encouragement that I'm on the right path</p>
+    <p>Thanks for visiting. <br>
+      -- Jason</p>
+  </div>
 </article>
 
