@@ -136,9 +136,6 @@
   <script src="/components/jhtwbs/docs/assets/js/bootstrap.js"></script>
 
   <!-- DocPad Scripts + Our Own -->
-  <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
-
-  <!-- DocPad Scripts + Our Own -->
   <%- @getBlock('scripts').add(@site.scripts).add(["/scripts/scripts.js"].concat(@document.scripts or [])).toHTML() %>
 
 
