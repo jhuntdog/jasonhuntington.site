@@ -3,8 +3,20 @@ layout: default
 ---
 
 <article id="post" class="post">
-  <h1><%= @document.title %></h1>
-  <div class="post-content"><%- @content %></div>
+  <h1>
+    <a href="<%= @document.url %>" class="page-link">
+      <strong class="page-title" property="dcterms:title">
+        <%= @document.title %>
+      </strong>
+      <small class="page-date" property:"dc:date">
+        <%= @document.date.toDateString() %>
+      </small>
+    </a>
+
+  </h1>
+  <div class="post-content" property="sioc:content">
+    <%- @content %>
+  </div>
 </article>
 
 <div id="post-footer" class="post-footer">

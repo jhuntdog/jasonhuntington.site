@@ -14,11 +14,11 @@
   <meta name="description" content="<%= @getPreparedDescription() %>">
   <meta name="keywords" content="<%= @getPreparedKeywords() %>">
 
-	<!-- DocPad Meta -->
-	<%- @getBlock('meta').toHTML() %>
+  <!-- DocPad Meta -->
+  <%- @getBlock('meta').toHTML() %>
 
-	<!-- DocPad Styles + Our Own -->
-	<%- @getBlock('styles').add(["/styles/jhtwbsstyles.css"]).add(@site.styles).toHTML() %>
+  <!-- DocPad Styles + Our Own -->
+  <%- @getBlock('styles').add(["/styles/jhtwbsstyles.css"]).add(@site.styles).toHTML() %>
 
 <style>
 
@@ -40,22 +40,19 @@
 </head>
 
 <body>
+  <div id="top-banner" class="accent-row"></div>
   <div role="main">
 
-    <div id="top-banner" class="accent-row"></div>
-
-		<!-- header
+    <!-- header
     ================================================== -->
     <header class="jh-heading" id="masthead">
       <div class="container">
-				<div class="heading-content">
+        <div class="heading-content">
 
           <a href="/" class="jh-brand" title="Return Home">
             Jason Huntington
           </a>
-            <img src="/img/jason-large.jpg" alt=" " class="heading-avatar" id="jason-photo">
-
-
+          <img src="/img/jason-large.jpg" alt=" " class="heading-avatar" id="jason-photo">
 
           <p class="lead">
             Just an average guy experimenting with web development.<br>
@@ -65,6 +62,9 @@
         </div> <!-- /heading-content -->
       </div>
     </header>
+
+
+    <div class="line"></div>
 
     <div class="jh-navbar">
       <div class="container">
@@ -110,31 +110,33 @@
     <div class="jh-container container">
       <div class="about">
         <p>
-          This website was created with <a href="http://docpad.org" title="Visit Website">Docpad</a> and is <a href="http://github.com/jhuntdog/jasonhuntington.site" title="Github Source">Open Source</a>.
+          This website was created with <a href="http://bevry.me" target="_blank" title="Visit Website">Bevry's</a> <a href="http://docpad.org" target="_blank" title="Visit on GitHub">DocPad</a> Powered by <a href="http://nodejs.org/" target="_blank" title="Node.js">Node.js</a> and is <a href="http://github.com/jhuntdog/jasonhuntington.site" title="Github Source">Open Source</a>.
         </p>
       </div>
       <div class="copyright">
         <p>
-          Unless stated otherwise, Copyright © 2013+ <a href="http://jasonhuntington.com">Jason Huntington</a>. <br>
+          Unless stated otherwise, Copyright © 2013+ <a href="http://jasonhuntington.com">Jason Huntington</a>.
+        </p>
+        <p>
           Code licensed <a href="http://en.wikipedia.org/wiki/Permissive_free_software_licence">permissively</a> under the <a href="http://creativecommons.org/licenses/MIT/">MIT License</a> and <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> for everything else (including content, media, design). Enjoy!
         </p>
       </div>
     </div>
   </footer>
 
-	<!-- Core JavaScript
+  <!-- Core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
 
-	<!-- jQuery -->
+  <!-- jQuery -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/components/jquery/jquery.js"><\/script>')</script>
 
   <!-- bootstrap scripts -->
   <script src="/components/jhtwbs/docs/assets/js/bootstrap.js"></script>
 
-	<!-- DocPad Scripts + Our Own -->
-	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+  <!-- DocPad Scripts + Our Own -->
+  <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 
   <!-- DocPad Scripts + Our Own -->
   <%- @getBlock('scripts').add(@site.scripts).add(["/scripts/scripts.js"].concat(@document.scripts or [])).toHTML() %>

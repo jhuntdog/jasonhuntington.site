@@ -4,8 +4,7 @@ env.coffee
 .env
 settings.js
 
-
-# node_modules hack for azure #
+# node_modules for azure #
 # ---------------------- #
 !node_modules/
 
