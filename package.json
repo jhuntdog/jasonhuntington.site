@@ -21,7 +21,8 @@
     "docpad-plugin-coffeekup": "~2.1.5",
     "docpad-plugin-cleanurls": "~2.4.3",
     "docpad-plugin-coffeescript": "~2.2.1",
-    "coffee-script": "~1.6.2"
+    "coffee-script": "~1.6.2",
+    "docpad-plugin-services": "~2.2.4"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
