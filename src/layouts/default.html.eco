@@ -40,9 +40,8 @@
 </head>
 
 <body>
+  <div id="top-banner" class="accent-row"></div>
   <div role="main">
-
-    <div id="top-banner" class="accent-row"></div>
 
     <!-- header
     ================================================== -->
@@ -53,9 +52,7 @@
           <a href="/" class="jh-brand" title="Return Home">
             Jason Huntington
           </a>
-            <img src="/img/jason-large.jpg" alt=" " class="heading-avatar" id="jason-photo">
-
-
+          <img src="/img/jason-large.jpg" alt=" " class="heading-avatar" id="jason-photo">
 
           <p class="lead">
             Just an average guy experimenting with web development.<br>
@@ -65,6 +62,8 @@
         </div> <!-- /heading-content -->
       </div>
     </header>
+
+    <div class="line"></div>
 
     <div class="jh-navbar">
       <div class="container">

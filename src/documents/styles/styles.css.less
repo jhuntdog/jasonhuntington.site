@@ -114,10 +114,19 @@ textarea {
   height: 1em;
 }
 
+.line {
+  clear: both;
+  border-bottom: 1px #ccc dotted;
+}
+
 // typography
 h2 { color: @colorOrangeDark;}
 
 // base
+body {
+  background: url("/img/main-bg-shadow.png") repeat-x;
+}
+
 .jh-container {
   padding-left: 15px;
   padding-right: 15px;
@@ -160,8 +169,7 @@ section > ul li {
   padding-bottom: 2em;
   padding-right: 5%;
   padding-left: 5%;
-  background-color: #eeeeee;
-  background-color: rgba(238, 238, 238, 0.2);
+
 }
 
 .jh-heading .jh-brand {
@@ -412,7 +420,7 @@ aside.social-connections section.twitter h1 {
 
   /* Account for fixed navbar (which is static to start) */
   body {
-    padding-top: 4px; /* Default height of navbar */
+    padding-top: 0; /* Default height of navbar */
   }
 
   .jh-container {
@@ -421,14 +429,18 @@ aside.social-connections section.twitter h1 {
   }
 
   .jh-heading {
-    margin-top: 10px;
+    margin-top: 40px;
     margin-right: 0;
     margin-left: 0;
   }
 
+  .jh-brand {
+    margin-bottom: 20px;
+  }
+
   .jh-heading .jh-brand {
-    font-size: 3.6em;
-    line-height: 2em;
+    font-size: 4.0em;
+    line-height: 1em;
   }
 
   .logo {
