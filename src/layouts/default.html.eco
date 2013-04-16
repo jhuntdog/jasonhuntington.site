@@ -57,7 +57,7 @@
           <p class="lead">
             Just an average guy experimenting with web development.<br>
             Available for consulting.
-            <a href="#" title="Contact Me" class="contact-button">Contact</a>
+            <a href="mailto:jason@jhuntington.com" title="Contact Me" class="contact-button">Contact</a>
           </p>
 
         </div> <!-- /heading-content -->
