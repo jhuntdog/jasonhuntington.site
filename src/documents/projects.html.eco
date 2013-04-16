@@ -10,6 +10,57 @@ pageOrder: 3
 navOrder: 3
 ---
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, pariatur nulla tempore! In, expedita accusamus perferendis dicta minima quas aut veniam debitis numquam magnam. Ratione, at fugiat fugit nobis labore.</p>
-<p>Corporis, harum, repudiandae, iste consequatur architecto perferendis unde nobis et soluta omnis rerum quasi obcaecati enim excepturi sed minima itaque quidem? Ipsa, dolorum consectetur nesciunt a eaque repudiandae ullam illo.</p>
-<p>Nisi, dicta, impedit, corporis, ullam culpa maiores qui eius minus fuga dolore distinctio blanditiis iusto quo quaerat error officia dolorum. Dignissimos, aliquid, quaerat illum in voluptatem accusamus minima maxime possimus.</p>
+<nav class="project-list" typeof="dc:collection">
+  <li class="project" typeof="soic:post">
+    <h3>
+      <a href="https://github.com/jhuntdog/jasonhuntington.site" class="project-link">
+        <strong class="project-name" property="dc:name">JasonHuntington Website</strong>
+      </a>
+    </h3>
+    <p class="project-description">
+      My Personal Website, featuring Docpad, Nodejs, Twitter Bootstrap. Code demonstrates HTML5, CSS, Less, Coffeescript, Javascript.
+    </p>
+  </li>
+  <li class="project" typeof="soic:post">
+    <h3>
+      <a href="https://github.com/CPRKC/cprkc.website" class="project-link">
+        <strong class="project-name" property="dc:name">Study Website</strong>
+      </a>
+    </h3>
+    <p class="project-description">
+      Clinical Trial Web Application integrating <strong>AngularJS</strong> and Docpad.
+    </p>
+  </li>
+  <li class="project" typeof="soic:post">
+    <h3>
+      <a href="https://github.com/jhuntdog/JewellBizAndroid" class="project-link">
+        <strong class="project-name" property="dc:name">Jewell Biz Reader - Android</strong>
+      </a>
+    </h3>
+    <p class="project-description">
+      Android News Reader App built for JewellBizToday.com.
+    </p>
+  </li>
+  <li class="project" typeof="soic:post">
+    <h3>
+      <a href="https://github.com/jhuntdog/com.jhuntington.android.esfitness" class="project-link">
+        <strong class="project-name" property="dc:name">Android Fitness Calculator App</strong>
+      </a>
+    </h3>
+    <p class="project-description">
+      Body composition and fitness tools for Android.
+    </p>
+  </li>
+
+
+  <li class="project" typeof="soic:post">
+    <h3>
+      <a href="https://github.com/jhuntdog/rainmeter.skin" class="project-link">
+        <strong class="project-name" property="dc:name">Rainmeter Skin</strong>
+      </a>
+    </h3>
+    <p class="project-description">
+      Custom Rainmeter skin for Windows Desktop Heads-Up-Display.
+    </p>
+  </li>
+</nav>

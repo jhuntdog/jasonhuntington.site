@@ -56,7 +56,8 @@
 
           <p class="lead">
             Just an average guy experimenting with web development.<br>
-            Available for consulting. <a href="mailto:jason@jasonhuntington.com" title="Contact Me" class="contact-button">Contact</a>
+            Available for consulting.
+            <a href="#" title="Contact Me" class="contact-button">Contact</a>
           </p>
 
         </div> <!-- /heading-content -->
@@ -123,6 +124,11 @@
       </div>
     </div>
   </footer>
+
+  <aside class="modal contact">
+    <%- @partial('contact.html') %>
+  </aside>
+  <aside class="modal backdrop"></aside>
 
   <!-- Core JavaScript
   ================================================== -->

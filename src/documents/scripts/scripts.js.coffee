@@ -26,6 +26,44 @@ $ ->
   # Links
 
   # ---------------------------------
+  # Modals
+  hideModals = ->
+    $('.modal').hide()
+  $document.on 'keyup', (event) ->
+    hideModals() if event.keyCode is 27 # escape
+  $body.on 'click', '.modal.backdrop', (event) ->
+    event.stopImmediatePropagation()
+    event.preventDefault()
+    hideModals()
+  $body.on 'click', '.contact-button', (event) ->
+    event.stopImmediatePropagation()
+    event.preventDefault()
+    # _gaq?.push(['_trackEvent', "Contact Modal", document.title, document.location.href, 0, true])
+
+    $contactModal = $('.contact.modal').css({
+      top: '5.5em'
+      height: 'auto'
+      opacity: 0
+    }).show()
+    $backdropModal = $('.modal.backdrop').css({
+      height: window.innerHeight*2
+    })
+
+    contactModalOffset = $contactModal.offset()
+    if $contactModal.height()+contactModalOffset.top*2 > window.innerHeight
+      console.log('asd')
+      $contactModal.css({
+        top: contactModalOffset.left
+        height: window.innerHeight-contactModalOffset.left*2
+      })
+
+    $backdropModal.show()
+    $contactModal.css({
+      opacity: 1
+    })
+
+
+  # ---------------------------------
   # Misc
 
   # Show javascript properties
