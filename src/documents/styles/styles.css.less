@@ -244,7 +244,7 @@ header.jh-heading h1 {
 // nav
 // --------------------------------
 nav.mainnav {
-  font-size: 26px;
+  font-size: 18px;
 }
 
 nav.mainnav > ul {
@@ -253,14 +253,14 @@ nav.mainnav > ul {
 
 nav.mainnav .nav > li {
   display: inline;
-  margin-right: 0.75em;
+  margin-right: 0.2em;
 }
 
 nav.mainnav .nav > li > a {
   color: @colorBlue;
   display: inline;
   line-height: 14px;
-  padding: 10px 14px 0;
+  padding: 10px 4px 0;
   border-radius: 0;
 }
 
@@ -544,6 +544,16 @@ aside.social-connections section.twitter h1 {
     font-size: 36px;
   }
 
+  nav.mainnav .nav > li {
+    display: inline;
+    margin-right: 0.6em;
+  }
+
+  nav.mainnav .nav > li > a {
+    padding: 10px 14px 0;
+    border-radius: 0;
+  }
+
   aside.social-connections section h1 {
     font-size: 20px;
     line-height: 1;
@@ -567,6 +577,12 @@ aside.social-connections section.twitter h1 {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (max-width: 480px) {
+  .heading-avatar {
+    top: 0;
+  }
 }
 
 @media print,

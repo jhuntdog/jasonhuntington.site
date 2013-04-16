@@ -46,7 +46,7 @@
     <!-- header
     ================================================== -->
     <header class="jh-heading" id="masthead">
-      <div class="container">
+      <div class="container jh-container">
         <div class="heading-content">
 
           <a href="/" class="jh-brand" title="Return Home">
@@ -67,7 +67,7 @@
     <div class="line"></div>
 
     <div class="jh-navbar">
-      <div class="container">
+      <div class="container jh-container">
         <nav class="mainnav">
           <ul class="nav">
             <% for document in @getCollection('navpages').toJSON(): %>
