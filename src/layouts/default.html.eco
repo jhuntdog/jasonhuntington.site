@@ -132,11 +132,8 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/components/jquery/jquery.js"><\/script>')</script>
 
-  <!-- bootstrap scripts -->
-  <script src="/components/jhtwbs/docs/assets/js/bootstrap.js"></script>
-
   <!-- DocPad Scripts + Our Own -->
-  <%- @getBlock('scripts').add(@site.scripts).add(["/scripts/scripts.js"].concat(@document.scripts or [])).toHTML() %>
+  <%- @getBlock('scripts').add(@site.scripts).add([].concat(@document.scripts or [])).toHTML() %>
 
 
 </body>

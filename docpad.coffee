@@ -10,12 +10,12 @@ docpadConfig = {
     # Site properties
     site:
       # The production url of our website
-      url: "http://website.com"
+      url: "http://jasonhuntington.com"
 
       # Here are some old site urls that you would like to redirect from
       oldUrls: [
-        'www.website.com',
-        'website.herokuapp.com'
+        'www.jasonhuntington.com',
+        'jasonhuntington.herokuapp.com'
       ]
 
       title: "JasonHuntington"
@@ -60,9 +60,13 @@ docpadConfig = {
       ]
 
       # The website's scripts
-      scripts: [
-        '/scripts/plugins.js'
-      ]
+      scripts: """
+        /components/jhtwbs/docs/assets/js/bootstrap.js
+        /scripts/plugins.js
+        /scripts/scripts.js
+        """.trim().split('\n')
+
+
 
 
     # -----------------------------
