@@ -41,7 +41,7 @@ $ ->
     # _gaq?.push(['_trackEvent', "Contact Modal", document.title, document.location.href, 0, true])
 
     $contactModal = $('.contact.modal').css({
-      top: '5.5em'
+      top: '7em'
       height: 'auto'
       opacity: 0
     }).show()
