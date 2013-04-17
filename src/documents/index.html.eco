@@ -15,6 +15,7 @@ navOrder: 1
     I launched this website to learn about web development and web programming technologies, <br>
      including HTML5, Nodejs, Javascript, and Windows Azure.
   </p>
+  <p class="lead muted">There is a ton of work to do before the site is complete, but I'm proud of what I've got so far and am glad for the experience.</p>
 </div>
 
 <article class="pitch">
