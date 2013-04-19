@@ -38,7 +38,7 @@ navOrder: 3
       </a>
     </h3>
     <p class="project-description">
-      Android News Reader App built for JewellBizToday.com.
+      Android News Reader App built for <a href="http://jewellbiz.com">Jewell Business Today</a>.
     </p>
   </li>
   <li class="project" typeof="soic:post">

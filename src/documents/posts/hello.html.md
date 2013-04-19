@@ -1,7 +1,7 @@
 ---
-title: This is a Blog Post
+title: Initial Commit
 layout: post
 tags: ['intro','post']
 ---
 
-This is a **blog post**
+This is my first post and example of blogging engine I've got rocking.
