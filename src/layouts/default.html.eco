@@ -14,6 +14,9 @@
   <meta name="description" content="<%= @getPreparedDescription() %>">
   <meta name="keywords" content="<%= @getPreparedKeywords() %>">
 
+  <!-- custom meta -->
+  <meta name="google-site-verification" content="Y7w7G_YxyC_AcGNu0rJ8kjcEopBWeZ78J_lCv5UF99U" />
+
   <!-- DocPad Meta -->
   <%- @getBlock('meta').toHTML() %>
 
