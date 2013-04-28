@@ -3,6 +3,7 @@ out
 env.coffee
 .env
 settings.js
+graphics
 
 # node_modules for azure #
 # ---------------------- #
