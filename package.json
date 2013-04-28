@@ -20,15 +20,6 @@
     "docpad-plugin-stylus": "2.x",
     "docpad-plugin-text": "2.x"
   },
-  "devDependencies": {
-    "docpad-plugin-livereload": "2.x",
-    "grunt": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-clean": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-concat": "*",
-    "grunt-contrib-jshint": "*"
-  },
   "engines": {
     "node": "0.8.x",
     "npm": "1.2.x"
