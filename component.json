@@ -1,17 +1,19 @@
 {
-  "name": "jasonhuntington.site",
-  "version": "0.1.0",
+  "name": "jasonhuntington",
+  "version": "0.0.1",
+  "private": true,
+  "main": "docpad.coffee",
   "ignore": [
     "**/.*",
     "node_modules",
     "components"
   ],
   "dependencies": {
-    "jquery": "~1.9.1",
-    "html5shiv": "~3.6.2",
+    "jquery": "~2.0.0",
     "respond": "~1.2.0",
-    "font-awesome": "~3.0.2",
+    "html5shiv": "~3.6.2",
     "normalize-css": "~2.1.1",
+    "font-awesome": "~3.0.2",
     "jhtwbs": "git://github.com/jhuntdog/jhtwbs.git#v2.9.2"
   }
 }

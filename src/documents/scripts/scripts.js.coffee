@@ -2,7 +2,7 @@
 
 
 WebFontConfig = google:
-  families: [ "Lato:400,700,900,400italic", "Open+Sans:400italic,600italic,700italic,400,600,700" ]
+  families: [ "Lato:400,700,900,400italic", "Source+Sans+Pro:200,300,400,600,700,400italic,600italic,700italic:latin" ]
 
 (->
   wf = document.createElement("script")

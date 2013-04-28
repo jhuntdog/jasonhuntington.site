@@ -1,0 +1,430 @@
+// Import Bootstrap
+@import "jmhbootstrap.css";
+
+// jmh variables and mixins
+//@import "../../less/jmhvariables.less";
+@import "../../less/jmhmixins.less";
+@import "../../less/jmhpreboot.less";
+@import "../../less/jmhbase.less";
+
+// =================================
+// variables
+
+// Grays
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+// color
+@color-body-bg:  #fff;
+@color-body-bg-block: #efeff2;
+
+@colorContent:          #666;
+@colorContentSecondary: #717171;
+
+@colorPrimary:      #007acc;  //rgb(0, 122, 204)
+@colorAccentGreen:  #537900;
+@colorAccentRed:    #911E1D;
+@colorAccentBlue:   #007acc;
+
+@colorInfo:     #008287;
+@colorWarning:  #FF981D;
+@colorDanger:   #B01E00;
+@colorSuccess:  #199900;
+
+@colorLink:       @colorPrimary;
+@colorLinkHover:  darken(@colorLink, 15%);
+@colorLinkAccent: @colorAccentGreen;
+
+@colorHeader:     @colorPrimary;
+@colorSubHeader:  @colorContent;
+
+@colorActive:       @colorPrimary;
+@colorActiveAccent: @colorAccentRed;
+@colorInActive:     @grayLight;
+
+@colorBlockContent:   #666;
+@colorGrayBackground: #efeff2;
+
+// base style defualts
+// -------------------
+
+// Everything Make paddings be included within the width
+* { box-sizing: border-box; }
+
+.js { display: none; }
+
+html,
+button,
+input,
+select,
+textarea {
+  color: @colorContent;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: lighten(@colorPrimary, 12%);
+  text-shadow: none;
+}
+
+::selection {
+  background: lighten(@colorPrimary, 12%);
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+img { vertical-align: middle; }
+
+fieldset { border: 0; margin: 0; padding: 0; }
+
+textarea { resize: vertical; }
+
+// ====================================
+// Site Styles
+
+body > .container,
+.footer .container {
+  padding-left:  15px;
+  padding-right: 15px;
+}
+
+body {
+  background: url("/img/main-bg-shadow.png") repeat-x;
+  min-height: 1600px;
+  font-size: 16px;
+}
+
+body:before {
+  position: absolute;
+  top: 0;
+  height: 10px;
+  left: 0;
+  width: 100%;
+  background: @colorPrimary;
+  background: rgba(0,122,204,0.85);
+  content: "";
+  margin: 0;
+  padding: 0;
+  z-index: 999999;
+}
+
+.jmh-container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+// Padding for in-page bookmarks
+section {
+  padding-top: 10px;
+}
+
+// Few stylistic typography tweaks
+section > .page-header,
+section > .lead {
+  color: @colorAccentBlue;
+}
+
+
+h1 { font-size: 36px; }
+
+.subtle {
+  transition: opacity 1s;
+  background: @color-body-bg;
+  opacity: 0.3;
+  &:hover { opacity: 1; }
+}
+
+// header
+// ------
+
+header[role="banner"].heading {
+  padding-top: 20px;
+  border: 0 none;
+  background: rgba(255, 255, 255, 0.95);
+  #gradient > .vertical(#f2f2f2, @white);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  *zoom: 1;
+  .jmh-brand {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 20px;
+    line-height: 1.4;
+  }
+  .subheader {
+    font-weight: 300;
+  }
+  .jmh-title a {
+    color: @colorPrimary;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: lighten(@colorPrimary, 6%);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+// nav
+// ---
+
+nav[role="navigation"].mainnav {
+  background-color: @white;
+  .nav > li {
+    float: left;
+    margin-left: 2px;
+  }
+  .nav > li > a {
+    padding: 2px 4px;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: darken(@colorPrimary, 4%);
+    &:hover {
+      color: darken(@colorPrimary, 10%);
+    }
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    border-bottom: solid 2px darken(@colorLinkAccent, 5%);
+  }
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus {
+    font-weight: 700;
+    color: darken(@colorPrimary, 14%);
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: solid 3px darken(@colorLinkAccent, 5%);
+  }
+}
+
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+  color: #333333;
+  background-color: transparent;
+}
+
+
+// social network links
+// --------------------
+.network-links-wrapper {
+  margin-top: 20px;
+  padding: 15px 0;
+  background-color: @color-body-bg-block;
+  border-top: 1px solid darken(@color-body-bg-block, 10%);
+  border-bottom: 1px solid darken(@color-body-bg-block, 10%);
+}
+
+aside[role="social-network-links"].social-connections {
+  h1 {
+    color: @colorContent;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding: 0;
+  }
+  .links {
+    float: left;
+    margin-right: 14px;
+  }
+  section.googleplus h1 { color: #F90101; }
+  section.facebook h1 { color: #4966a1; }
+  section.linkedin h1 { color: #0083b3; }
+  section.github h1 { color: #000; }
+  section.twitter h1 { color: #248dcd; }
+}
+
+// modal contact
+// -------------
+
+aside.modal.contact {
+  z-index: 500;
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  padding: 2em;
+  background: white;
+  border: 1px solid @colorContent;
+  display: none;
+  overflow: auto;
+
+  h1,h2 {
+    font-weight: normal;
+    color: @colorAccentGreen;
+    font-size: 36px;
+    margin: 1em 0 .25em;
+  }
+}
+
+aside.modal.backdrop {
+  z-index: 499;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background: white;
+  cursor: pointer;
+  display: none;
+  opacity: 0.5;
+}
+
+
+// footer
+// ---------------------------
+.colophon {
+  padding: 30px 0;
+  margin-top: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+.colophon p {
+  margin-bottom: 4px;
+  color: #777;
+}
+
+
+// home page styles
+// ---------------
+
+.marketing .lead {
+  font-weight: 400;
+}
+
+// page content
+// ------------
+
+article.page {
+  h3 {
+    small {
+      font-size: 75%;
+    }
+  }
+  .document-date {
+    color: @colorAccentGreen;
+  }
+  .document-date,
+  .page-date,
+  .project-watchers {
+    white-space: nowrap;
+  }
+
+}
+
+
+// project page styles
+// -------------------
+
+.project-list p.project-description {
+  margin-left: 1em;
+}
+
+
+// ====================================
+// Helper Classes
+
+.spacer { height: 1em; }
+
+.line {
+  clear: both;
+  border-bottom: 1px #ccc solid;
+}
+
+
+ //Image replacement
+.ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
+.ir:before { content: ""; display: block; width: 0; height: 150%; }
+
+// hide elements
+.hidden { display: none !important; visibility: hidden; }
+
+.invisible { visibility: hidden; }
+
+
+// ====================================
+// ====================================
+// Responsive Layout
+
+@media only screen and (min-width: 35em) {
+  header.heading .jmh-brand {
+    font-size: 48px;
+  }
+
+  nav[role="navigation"].mainnav {
+    padding-bottom: 4px;
+    .nav > li {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+    .nav > li > a {
+      padding: 8px;
+      font-size: 2.2em;
+      font-weight: 400;
+    }
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+      border-bottom: solid 4px darken(@colorLinkAccent, 5%);
+    }
+    .nav > .active > a,
+    .nav > .active > a:hover,
+    .nav > .active > a:focus {
+      font-weight: 700;
+      border-bottom: solid 5px darken(@colorLinkAccent, 5%);
+    }
+
+  }
+
+  h1 { font-size: 38px; }
+
+
+
+}
+
+
+// Specific Device Targets
+// -----------------------
+
+ // Large desktop
+@media (min-width: 1200px) {  }
+
+ // Portrait tablet to landscape and desktop
+@media (min-width: 768px) and (max-width: 979px) {
+  nav[role="navigation"].mainnav {
+    .nav > li > a {
+      font-size: 1.8em;
+    }
+  }
+}
+
+ // Landscape phone to portrait tablet
+@media (min-width: 35em) and (max-width: 767px) {
+  nav[role="navigation"].mainnav {
+    .nav > li > a {
+      font-size: 1.4em;
+    }
+  }
+}
+
+ // Landscape phones and down
+@media (max-width: 480px) {
+
+}
+

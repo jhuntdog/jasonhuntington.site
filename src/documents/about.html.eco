@@ -1,0 +1,26 @@
+---
+layout: 'page'
+title: 'About'
+tags: ['page']
+scripts: []
+navlinktitle: 'About'
+navicon: 'icon-info-sign'
+isPage: true
+pageOrder: 4
+navOrder: 4
+---
+
+
+
+<article class="pitch">
+  <h2>Pitch</h2>
+  <p>I am smart and motivated to improve myself and community. My education and experience working on the forefront of medical and pharmaceutical innovation have inevitably lead me to information technology, data management, and programming. Web programming is a hobby that has yielded incredible production in business application.</p>
+  <a href="#" class="read-more js">more...</a>
+  <div class="more-to-read">
+    <p>I am fluent in medical terminology, pharmaceutical development, and health data sciences.</p>
+    <p>I like to code.</p>
+    <p>I'm blessed for the experiences in my life, the good and the bad, and strive for success and improvement.</p>
+    <p>Thanks for visiting, sincerely, <br>
+      -- Jason</p>
+  </div>
+</article>

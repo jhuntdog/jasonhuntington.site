@@ -5,7 +5,7 @@
   <!-- Standard Meta -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Site Properities -->
   <title><%= @getPreparedTitle() %></title>
@@ -18,7 +18,7 @@
   <%- @getBlock('meta').toHTML() %>
 
   <!-- DocPad Styles + Our Own -->
-  <%- @getBlock('styles').add(["/styles/jhtwbsstyles.css"]).add(@site.styles).toHTML() %>
+  <%- @getBlock('styles').add([]).add(@site.styles).toHTML() %>
 
 <style>
 
@@ -40,22 +40,28 @@
 </head>
 
 <body>
-  <div id="top-banner" class="accent-row"></div>
-  <div role="main">
+
+  <div id="page-wrapper" class="wrapper">
 
     <!-- header
     ================================================== -->
-    <header class="jh-heading" id="masthead">
-      <div class="container jh-container">
+    <header role="banner" class="heading" id="masthead">
+      <div class="container jmh-container">
         <div class="heading-content">
 
-          <a href="/" class="jh-brand" title="Return Home">
-            Jason Huntington
-          </a>
-          <img src="/img/jason-large.jpg" alt=" " class="heading-avatar" id="jason-photo">
+          <div class="jmh-title">
+            <a href="/" class="jmh-brand" title="Return Home">
+              <img src="/img/jmhlogo64x33.png" alt="jmh" class="logo">
+              <span class="title">/ Jason Huntington</span>
+            </a>
+          </div>
 
-          <p class="lead">
-            Just an average guy experimenting with web development.<br>
+          <img src="/img/jason-large.jpg" alt=" " class="heading-avatar hidden" id="jason-photo">
+          <p class="text-muted">
+            Hunting for direction and experimenting with web applications.
+          </p>
+          <p class="lead subheader">
+            I love development and plan to chronicle my experiences as I go. <br>
             Available for consulting.
             <a href="mailto:jason@jhuntington.com" title="Contact Me" class="contact-button">Contact</a>
           </p>
@@ -65,77 +71,81 @@
     </header>
 
 
+
+    <nav role="navigation" class="navbar mainnav" id="mainnavbar">
+      <div class="container">
+        <a href="/" class="navbar-brand hidden">
+          <img src="/img/jmhlogo48x33.png" alt="">
+        </a>
+        <ul class="nav">
+          <% for document in @getCollection('navpages').toJSON(): %>
+            <li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
+              <a href="<%= document.url %>" property="dc:title">
+                <i class="<%= document.navicon %>"></i>
+                <%= document.navlinktitle %>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+
     <div class="line"></div>
 
-    <div class="jh-navbar">
-      <div class="container jh-container">
-        <nav class="mainnav">
-          <ul class="nav">
-            <% for document in @getCollection('navpages').toJSON(): %>
-              <li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
-                <a href="<%= document.url %>" property="dc:title">
-                  <i class="<%= document.navicon %>"></i>
-                  <%= document.navlinktitle %>
-                </a>
-              </li>
-            <% end %>
-          </ul>
-        </nav>
+    <div role="main" class="body-wrapper">
+      <div class="container jmh-container">
+
+        <section id="content" class="content">
+          <%- @content %>
+        </section>
+
       </div>
-    </div> <!-- /jh-navbar -->
+    </div> <!-- /main -->
 
-
-    <div class="jh-container container">
-      <section id="content" class="content">
-        <%- @content %>
-      </section>
-    </div> <!-- /container -->
-
-  </div> <!-- /main -->
-
-
-  <aside class="social-connections">
-    <div class="jh-container container">
-      <h1>Connections</h1>
-
-      <%- @partial('social.html') %>
-
-
-
-    </div>
-
-  </aside>
-
-  <!-- colophon - main page footer (social buttons, copyright, etc) -->
-  <footer class="footer colophon">
-    <div class="jh-container container">
-      <div class="about">
-        <p>
-          This website was created with <a href="http://bevry.me" target="_blank" title="Visit Website">Bevry's</a> <a href="http://docpad.org" target="_blank" title="Visit on GitHub">DocPad</a> Powered by <a href="http://nodejs.org/" target="_blank" title="Node.js">Node.js</a> and is <a href="http://github.com/jhuntdog/jasonhuntington.site" title="Github Source">Open Source</a>.
-        </p>
-      </div>
-      <div class="copyright">
-        <p>
-          Unless stated otherwise, Copyright © 2013+ <a href="http://jasonhuntington.com">Jason Huntington</a>.
-        </p>
-        <p>
-          Code licensed <a href="http://en.wikipedia.org/wiki/Permissive_free_software_licence">permissively</a> under the <a href="http://creativecommons.org/licenses/MIT/">MIT License</a> and <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> for everything else (including content, media, design). Enjoy!
-        </p>
+    <div class="network-links-wrapper">
+      <div class="container jmh-container">
+        <div class="link-row">
+          <aside role="social-network-links" class="social-connections">
+            <div class="social-links">
+              <h1>Connections</h1>
+              <%- @partial('social.html') %>
+            </div>
+          </aside>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <aside class="modal contact">
-    <%- @partial('contact.html') %>
-  </aside>
-  <aside class="modal backdrop"></aside>
+    <footer role="contentinfo" class="footer colophon">
+      <div class="container jmh-container">
+        <div class="about">
+          <p>
+            This website was created with <a href="http://bevry.me" target="_blank" title="Visit Website">Bevry's</a> <a href="http://docpad.org" target="_blank" title="Visit on GitHub">DocPad</a> Powered by <a href="http://nodejs.org/" target="_blank" title="Node.js">Node.js</a> and is <a href="http://github.com/jhuntdog/jasonhuntington.site" title="Github Source">Open Source</a>.
+          </p>
+        </div>
+        <div class="footnotes">
+          <p>
+            Unless stated otherwise, Copyright © 2013+ <a href="http://jasonhuntington.com">Jason Huntington</a>.
+          </p>
+          <p>
+            Code licensed <a href="http://en.wikipedia.org/wiki/Permissive_free_software_licence">permissively</a> under the <a href="http://creativecommons.org/licenses/MIT/">MIT License</a> and <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> for everything else (including content, media, design). Enjoy!
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="modal contact">
+      <%- @partial('contact.html') %>
+    </aside>
+    <aside class="modal backdrop"></aside>
+
+  </div> <!-- /wrapper -->
+
 
   <!-- Core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
 
   <!-- jQuery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/components/jquery/jquery.js"><\/script>')</script>
 
   <!-- DocPad Scripts + Our Own -->

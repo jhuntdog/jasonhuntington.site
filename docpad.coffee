@@ -21,7 +21,7 @@ docpadConfig = {
       title: "JasonHuntington"
       subtitle: "Jason Huntington Website"
       author: "Jason Huntington"
-      email: "jason@jasonhuntington.com"
+      email: "jason@jmhuntington.com"
       description: """
         Website of Jason Huntington. Just an average guy building a website.
         """
@@ -56,12 +56,11 @@ docpadConfig = {
 
       # The website's styles
       styles: [
-        '/styles/styles.css'
+        '/styles/style.css'
       ]
 
       # The website's scripts
       scripts: """
-        /components/jhtwbs/docs/assets/js/bootstrap.js
         /scripts/plugins.js
         /scripts/scripts.js
         """.trim().split('\n')
